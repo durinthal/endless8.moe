@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+    At one point someone else had their own version of this, but it disappeared from the Internet.
+    I had the very poor idea to do it again, and I eventually did for the tenth anniversary of this arc.
+    11-13 clips per episode, covering most of episodes 2-8. Currently at 27,394,334,352 possible permutations.
+    - Durinthal
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Summer isn't over yet.">
+    <link rel="icon" type="image/png" href="sos-brigade.png">
+    <title>Endless Eight Generator</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video id='video-1' preload='auto' width='848' height='480'
+            poster='thumb2.png' data-setup='{}' autoplay controls>
+            <source id='video-1-source' src='' type='video/mp4'>
+        </video>
+        <video id='video-2' class="hidden" preload='auto' width='848' height='480'
+            poster='thumb2.png' data-setup='{}' controls>
+            <source id='video-2-source' src='' type='video/mp4'>
+        </video>
+        <p id="notice">Summer isn't over yet.
+            <a id='restart-link' class="hidden" href="#" onclick="restart();">Try again?</a>
+        </p>
+    </div>
+</body>
+<script src="data.js" type='text/javascript'></script>
+<script src="player.js" type='text/javascript'></script>
+</html>
